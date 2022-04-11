@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Window">
+    <children>
+        <TabPane layoutY="-2.0" prefHeight="408.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Login">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="144.0" layoutY="189.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Login" />
+                        <Label layoutX="75.0" layoutY="83.0" text="Username" />
+                        <Label layoutX="76.0" layoutY="138.0" text="Password" />
+                        <TextField layoutX="129.0" layoutY="79.0" />
+                        <PasswordField layoutX="129.0" layoutY="134.0" />
+                        <Label layoutX="144.0" layoutY="7.0" prefHeight="40.0" prefWidth="148.0" text="Say no to bugs!">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Programmer">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView layoutX="223.0" layoutY="71.0" prefHeight="200.0" prefWidth="251.0" />
+                        <Label layoutX="225.0" layoutY="43.0" text="My bugs" />
+                        <Button layoutX="248.0" layoutY="285.0" mnemonicParsing="false" text="Solve Bug" />
+                        <Button layoutX="352.0" layoutY="285.0" mnemonicParsing="false" text="Bug details" />
+                        <Button layoutX="292.0" layoutY="325.0" mnemonicParsing="false" text="Remove Bug" />
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Verifier">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="111.0" layoutY="56.0" text="Name" />
+                        <TextField layoutX="197.0" layoutY="52.0" />
+                        <Label layoutX="111.0" layoutY="122.0" text="Description" />
+                        <TextArea layoutX="200.0" layoutY="122.0" prefHeight="96.0" prefWidth="351.0" />
+                        <Label layoutX="111.0" layoutY="266.0" text="Priority" />
+                        <RadioButton layoutX="197.0" layoutY="266.0" mnemonicParsing="false" text="Important" />
+                        <Button layoutX="210.0" layoutY="306.0" mnemonicParsing="false" text="Register Bug" />
+                        <RadioButton layoutX="281.0" layoutY="266.0" mnemonicParsing="false" text="Neglectable" />
+                        <RadioButton layoutX="389.0" layoutY="266.0" mnemonicParsing="false" text="Very Important" />
+                        <CheckBox layoutX="198.0" layoutY="235.0" mnemonicParsing="false" text="Syntax Error" />
+                        <Label layoutX="113.0" layoutY="235.0" text="Type" />
+                        <CheckBox layoutX="300.0" layoutY="235.0" mnemonicParsing="false" text="Runtime Error" />
+                        <CheckBox layoutX="404.0" layoutY="235.0" mnemonicParsing="false" text="Logic Error" />
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
